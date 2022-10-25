@@ -7,6 +7,11 @@ botaoAdicionar.onclick = function(event){
     let quantidade = Number(document.getElementById("input_qtd").value);
     let preco = Number(document.getElementById("input_preco").value);
 
+    if(quantidade <= 0 || preco <= 0){
+        alert("Quantidade e preço devem ser valores positivos");
+        return
+    }
+
     precoTotal = (preco * quantidade);
 
     novoItem = document.createElement("li");
