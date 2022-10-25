@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras</title>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <h1>Lista de Compras</h1>
     <div class="separador">
-        <input type="text" placeholder="Item">
-        <input type="text" placeholder="Quantidade">
-        <input type="text" placeholder="Preço">
-        <button>Adicionar</button>
+        <input type="text" placeholder="Item" id="input_item">
+        <input type="text" placeholder="Quantidade" id="input_qtd">
+        <input type="text" placeholder="Preço" id="input_preco">
+        <button id="botao_add">Adicionar</button>
     </div>
     <div class="separador">
         <h3>Lista atual:</h3>
+        <ul id="lista">
+
+        </ul>
     </div>
     <div class="separador">
         <h3>Total:</h3>
