@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  padding-left: 1rem;
+}
+
+.total-value {
+  display: flex;
+  font-size: 1rem;
+}
+
+.moeda {
+  padding-left: 15px;
+}
+
+#botao_add {
+  background-color: #0a0a23;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  min-height: 30px;
+  min-width: 100px;
+  padding: 15px;
+}
+
+#botao_add:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  margin: 8px 0;
+}
+
+th {
+  background-color: #1a2b58;
+  color: white;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  margin: 25px 0;
+  min-width: 400px;
+}
