@@ -1,0 +1,21 @@
+name: CD Lista de Compras
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  executarTeste:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: sa-east-1
+    - name: Copy files to aws
+      run: aws s3 cp index.html script.js styles.css icon.svg s3://listadecomprasppnp/
