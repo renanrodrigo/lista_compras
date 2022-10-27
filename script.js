@@ -44,7 +44,7 @@ botaoAdicionar.onclick = function (event) {
   let data_3 = document.createElement("td");
   data_3.innerHTML = preco;
   let data_4 = document.createElement("td");
-  data_4.innerHTML = precoTotal;
+  data_4.innerHTML = "R$ " + precoTotal;
 
   row_2.appendChild(data_1);
   row_2.appendChild(data_2);
