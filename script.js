@@ -54,5 +54,5 @@ botaoAdicionar.onclick = function (event) {
 
   lista.appendChild(table);
 
-  total.innerText = Number(total.innerText) + precoTotal;
+  total.innerText = Number(total.innerText) + precoTotal + 1;
 };
