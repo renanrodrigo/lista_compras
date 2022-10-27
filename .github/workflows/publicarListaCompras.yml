@@ -18,4 +18,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: sa-east-1
     - name: Copy files to aws
-      run: aws s3 cp index.html script.js styles.css icon.svg s3://listadecomprasppnp/
+      run: |
+        aws s3 cp index.html s3://listadecomprasppnp/
+        aws s3 cp script.js s3://listadecomprasppnp/
+        aws s3 cp icon.svg s3://listadecomprasppnp/
+        aws s3 cp styles.css s3://listadecomprasppnp/
